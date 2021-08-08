@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>CoderNews 2.0</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<h1 id="title">CoderNews</h1>
+				<a href="index.html">Headlines</a>
+				<a href="#" id="business">Business</a>
+				<a href="#" id="tech">Tech</a>
+				<a href="crypto.html">Crypto</a>
+				<a href="#" id="travel" onclick="travelSearch()">Travel</a>
+				<form action="search">
+					<input type="search" placeholder="Search" />
+					<button>Search</button>
+				</form>
+			</nav>
+		</header>
+		<section>
+			<div id="weather"></div>
+		</section>
+		<section>
+			<div class="container">
+				<ul id="articles"></ul>
+			</div>
+		</section>
+		<div id="newsList" onclick="test()">
+			<li id="test" onclick="test()"></li>
+		</div>
+		<button id="next" onclick="newArticles()">Next</button>
+		<section>
+			<div id="languages"></div>
+		</section>
+		<script src="otherPages.js"></script>
+		<script src="languages.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
